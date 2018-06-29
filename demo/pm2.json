@@ -1,0 +1,17 @@
+{
+  "apps": [{
+    "name"               : "pwa",
+    "script"             : "server/index.js",
+    "env": { "BABEL_DISABLE_CACHE": 1, "IS_ONLINE": 1 },
+    "exec_interpreter"   : "node",
+    "exec_mode"          : "cluster_mode",
+    "instances"          : 0,
+    "log_date_format"    : "YYYY-MM-DD HH:mm Z",
+    "max_memory_restart" : "500M",
+    "merge_logs"         : true,
+    "error_file"         : "/var/asdf/logs/pwa/error.log",
+    "out_file"           : "/var/asdf/logs/pwa/out.log",
+    "pid_file"           : "/var/asdf/logs/pwa/dx-mass.pid",
+    "watch"              : false
+  }]
+}
